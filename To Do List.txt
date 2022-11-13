@@ -1,0 +1,8 @@
+* Frontend refreshing page too fast thus the deleted object in the admin-product page still shows after pg refresh (Prio: low) Feature works
+just requires 2 refreshes to completely update the page
+
+*Implement delete functionality to delete from AWS when image is deleted from the website
+
+*Implement customer shopping cart and payment system
+
+Touch ups: make database system more intricate with gained knowledge from dbms course

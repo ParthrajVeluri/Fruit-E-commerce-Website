@@ -1,0 +1,48 @@
+<!--Navbar-->
+<div class="navbar bg-light ms-2 me-2">
+    <a class="navbar-brand">Fruit Market</a>
+    <button
+        class="nav-item navbar-toggler"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasScrolling"
+        aria-controls="offcanvasScrolling"
+    >
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</div>
+
+<!--Navigation Between Pages-->
+<div
+    class="offcanvas offcanvas-start"
+    data-bs-scroll="true"
+    data-bs-backdrop="false"
+    id="offcanvasScrolling"
+    aria-labelledby="offcanvasScrollingLabel"
+    tabindex="-1"
+>
+    <!--Navigation Header-->
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title display-6">Fruit Market</h5>
+        <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+        ></button>
+    </div>
+    <!--Navigation body-->
+    <div class="offcanvas-body">
+        <ul class="list-group list-group-flush text-white">
+            <li class="list-group-item list-group-item-dark">
+                <a href="admin" class="nav-link">Customers</a>
+            </li>
+            <li class="list-group-item list-group-item-dark">
+                <a href="admin-products" class="nav-link">Products</a>
+            </li>
+        </ul>
+
+        <form action="users/logout" method="POST">
+            <button type="submit" class="btn btn-secondary mt-5">Logout</button>
+        </form>
+    </div>
+</div>
